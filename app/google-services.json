@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "264080203345",
+    "firebase_url": "https://zibatcanteenapp2-31e21.firebaseio.com",
+    "project_id": "zibatcanteenapp2-31e21",
+    "storage_bucket": "zibatcanteenapp2-31e21.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:264080203345:android:d6e1251c881cb291",
+        "android_client_info": {
+          "package_name": "com.example.kibernetika.zibatcanteenapp2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "264080203345-a863a6g6p206mo5i19d1mgoa063pa2d5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDWo38D1xY8e0RdniMxyD3Py9KuBQPQnLU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

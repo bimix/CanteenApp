@@ -1,0 +1,83 @@
+
+//    public void submitRating(View view) {
+//        Log.d("Mine","step0");
+//        TextView messageView = (TextView) findViewById(R.id.value);
+//        try {
+//            JSONObject jsonObject = new JSONObject();
+//            Log.d("Mine","step1");
+//            jsonObject.put("DishId", dishes.getId());
+//            Log.d("DishId", dishes.getId() + "");
+//            jsonObject.put("CustomerId", 8);
+//            RatingBar ratingBar2= (RatingBar) findViewById(R.id.ratingBar);
+//            int ratingNum = Math.round(ratingBar2.getRating());
+//
+//            jsonObject.put("Rate", ratingNum);
+//
+//
+//            String jsonDocument = jsonObject.toString();
+//            Log.d("JSON", jsonDocument);
+//            messageView.setText(jsonDocument);
+//           // PostDishTask task = new PostDishTask();
+//            //task.execute("http://anbo-canteen.azurewebsites.net/Service1.svc/ratings",jsonDocument);
+//
+//        } catch (JSONException ex) {
+//            messageView.setText(ex.getMessage());
+//
+//        }
+//        finish();
+//    }
+
+//    private class PostDishTask extends AsyncTask<String, Void, CharSequence> {
+//
+//        @Override
+//        protected CharSequence doInBackground(String... params) {
+//            String urlString = params[0];
+//            String jsonDocumet = params[1];
+//            try {
+//                URL url = new URL(urlString);
+//                HttpURLConnection connection = (HttpURLConnection) url.openConnection();
+//                connection.setRequestMethod("POST");
+//                connection.setDoOutput(true);
+//                connection.setRequestProperty("Content-Type", "application/json");
+//                connection.setRequestProperty("Accept", "application/json");
+//                OutputStreamWriter osw = new OutputStreamWriter(connection.getOutputStream());
+//                osw.write(jsonDocumet);
+//                osw.flush();
+//                osw.close();
+//                int responseCode = connection.getResponseCode();
+//                if (responseCode / 100 != 2) {
+//                    String responseMessage = connection.getResponseMessage();
+//                    throw new IOException("HTTP response code: " + responseCode + " " + responseMessage);
+//                }
+//                BufferedReader reader = new BufferedReader(
+//                        new InputStreamReader(connection.getInputStream()));
+//                String line = reader.readLine();
+//                return line;
+//            } catch (MalformedURLException ex) {
+//                cancel(true);
+//                String message = ex.getMessage() + " " + urlString;
+//                Log.e("DISH", message);
+//                return message;
+//            } catch (IOException ex) {
+//                cancel(true);
+//                Log.e("DISH", ex.getMessage());
+//                return ex.getMessage();
+//            }
+//        }
+
+
+
+
+
+//        public void addListenerOnRatingBar() {
+//            rb = (RatingBar) findViewById(R.id.ratingBar);
+//            value = (TextView) findViewById(R.id.value);
+//            rb.setOnRatingBarChangeListener(new RatingBar.OnRatingBarChangeListener() {
+//                @Override
+//                public void onRatingChanged(RatingBar ratingBar, float rating, boolean fromUser) {
+//                    value.setText(String.valueOf(rating));
+//                    ratingNum = Math.round(rating);
+//                    Log.d("rate", ratingNum + "");
+//                }
+//            });
+//        }
